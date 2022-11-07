@@ -9,21 +9,26 @@ namespace challenge
     public class Product
     {
         public int Id { get; set; }
-        public string productDescription { get; set; }
-        public int cost { get; set; }
-        public int priceOfSell { get; set; }
-        public int stock { get; set; }
-        public int userId { get; set; }
+        public string ProducDescription { get; set; }
+        public int Cost { get; set; }
+        public int SellPrice { get; set; }
+        public int Stock { get; set; }
+        public int UserId { get; set; }
+
+        public Product()
+        {
+            ProducDescription = string.Empty;
+        }
 
 
         public Product(int id, string productDescription, int cost, int priceOfSell, int stock, int userId)
         {
             Id = id;
-            this.productDescription = productDescription;
-            this.cost = cost;
-            this.priceOfSell = priceOfSell;
-            this.stock = stock;
-            this.userId = userId;
+            this.ProducDescription = productDescription;
+            this.Cost = cost;
+            this.SellPrice = priceOfSell;
+            this.Stock = stock;
+            this.UserId = userId;
         }
 
     }
